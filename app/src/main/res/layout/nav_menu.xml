@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:orientation="vertical"
+    android:background="#28000000"
+    android:id="@+id/ll_navbar"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    5942627C-->
+
+    <RelativeLayout
+        android:layout_height="@dimen/_40sdp"
+
+        android:layout_width="match_parent">
+
+    <ImageView android:layout_height="@dimen/_20sdp"
+        android:layout_width="@dimen/_20sdp"
+        android:src="@mipmap/cancel"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_Cancel"/>
+
+    <ImageView android:layout_height="@dimen/_20sdp"
+        android:layout_width="@dimen/_20sdp"
+        android:src="@mipmap/grid"
+        android:visibility="gone"
+        android:layout_centerVertical="true" android:id="@+id/iv_Grid" android:layout_marginRight="@dimen/_10sdp" android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
+    <View android:background="@color/colorWhite" android:layout_height="1dp" android:layout_width="match_parent"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/rv_Mneu"
+        android:scrollbars="none"/>
+
+</LinearLayout>

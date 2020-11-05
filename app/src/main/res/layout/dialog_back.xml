@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="180dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:padding="30dp">
+    <TextView
+        android:id="@+id/tv_txt"
+        android:textSize="16dp"
+        android:textColor="@color/colorBlack"
+        android:justificationMode="inter_word"
+     android:text="Are you sure do you want to exit?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:buttonTint="#149133"
+            android:id="@+id/btn_checkbox"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="Reboot"
+            android:textSize="8pt"
+            android:layout_marginLeft="5dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_recharge"
+            android:background="@drawable/recharge_backbtn"
+            android:layout_gravity="end|right"
+            android:textColor="@android:color/white"
+            android:layout_height="40dp"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="Exit"
+            android:id="@+id/btn_cancel"
+            android:textSize="8pt"
+            android:background="@drawable/cancel_backbtn"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_height="40dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

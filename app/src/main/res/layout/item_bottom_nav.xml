@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_100sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@mipmap/boxx"
+    android:padding="@dimen/_10sdp"
+    android:id="@+id/ll_Contain"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <ImageView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/splash_screennew"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_Logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:id="@+id/tv_Count"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parg Media"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:id="@+id/tv_Name"/>
+
+</LinearLayout>

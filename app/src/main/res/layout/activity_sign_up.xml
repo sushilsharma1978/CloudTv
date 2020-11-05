@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Activities.SignUpActivity">
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:weightSum="1"
+                        android:layout_height="wrap_content">
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.15"></Space>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.65"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:visibility="gone"
+                                android:src="@drawable/splash_screennew"
+                                android:layout_gravity="center"
+                               />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="wrap_content"
+                            android:text="Existing user? LOGIN"
+                            android:id="@+id/tv_loginn"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginTop="5dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/main_blue_color"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+
+                        android:weightSum="1"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="0.87">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content">
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"></Space>
+
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/ed_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_weight="0.35"
+                                    android:background="@drawable/bg_side_unsel"
+                                    android:fontFamily="sans-serif"
+                                    android:hint="Name*"
+                                    android:inputType="textEmailAddress"
+                                    android:nextFocusRight="@+id/ed_ntwoperator"
+                                    android:paddingLeft="15dp"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="20dp"></android.support.design.widget.TextInputEditText>
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"></Space>
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.35"
+                                    android:hint="Network Name*"
+                                    android:paddingLeft="15dp"
+                                    android:textSize="20dp"
+                                    android:nextFocusDown="@+id/ed_password"
+                                    android:singleLine="true"
+                                    android:id="@+id/ed_ntwoperator"
+                                    android:textColor="@android:color/black"
+                                    android:fontFamily="sans-serif"
+                                    android:background="@drawable/bg_side_unsel"
+
+                                    android:layout_height="@dimen/_35sdp"
+
+                                    android:inputType="text"
+                                    >
+
+                                </android.support.design.widget.TextInputEditText>
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"></Space>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:layout_marginTop="15dp"
+                                android:layout_height="wrap_content">
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"></Space>
+                                <android.support.design.widget.TextInputEditText
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.35"
+                                    android:hint="Password*"
+                                    android:paddingLeft="15dp"
+                                    android:textSize="20dp"
+                                    android:nextFocusRight="@+id/ed_mobile"
+                                    android:singleLine="true"
+                                    android:id="@+id/ed_password"
+                                    android:textColor="@android:color/black"
+                                    android:fontFamily="sans-serif"
+                                    android:background="@drawable/bg_side_unsel"
+
+                                    android:layout_height="@dimen/_35sdp"
+
+                                    android:inputType="textPassword"
+                                    >
+
+                                </android.support.design.widget.TextInputEditText>
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"></Space>
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.35"
+                                    android:hint="Mobile*"
+                                    android:inputType="phone"
+                                    android:paddingLeft="15dp"
+                                    android:textSize="20dp"
+                                    android:singleLine="true"
+                                    android:maxLength="10"
+                                    android:background="@drawable/bg_side_unsel"
+                                    android:id="@+id/ed_mobile"
+                                    android:textColor="@android:color/black"
+                                    android:fontFamily="sans-serif"
+                                    android:layout_height="@dimen/_35sdp"
+                                    >
+
+                                </android.support.design.widget.TextInputEditText>
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"></Space>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:layout_marginTop="15dp"
+                                android:layout_height="wrap_content">
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"></Space>
+                                <android.support.design.widget.TextInputEditText
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.35"
+                                    android:hint="Email*"
+                                    android:paddingLeft="15dp"
+                                    android:textSize="20dp"
+                                    android:id="@+id/ed_email"
+                                    android:nextFocusDown="@+id/ed_password"
+                                    android:textColor="@android:color/black"
+                                    android:fontFamily="sans-serif"
+                                    android:singleLine="true"
+                                    android:background="@drawable/bg_side_unsel"
+
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:inputType="textEmailAddress"
+                                    >
+                                </android.support.design.widget.TextInputEditText>
+
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"></Space>
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.35"
+                                    android:hint="Cable Operator*"
+                                    android:inputType="text"
+                                    android:paddingLeft="15dp"
+                                    android:textSize="20dp"
+                                    android:singleLine="true"
+                                    android:background="@drawable/bg_side_unsel"
+                                    android:nextFocusDown="@id/ed_contactname"
+                                    android:id="@+id/ed_cableoperator"
+                                    android:textColor="@android:color/black"
+                                    android:fontFamily="sans-serif"
+                                    android:layout_height="@dimen/_35sdp"
+                                    >
+
+                                </android.support.design.widget.TextInputEditText>
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"></Space>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:layout_marginTop="15dp"
+                                android:layout_height="wrap_content">
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.325"></Space>
+                                <android.support.design.widget.TextInputEditText
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.35"
+                                    android:hint="Contact Person Name*"
+                                    android:paddingLeft="15dp"
+                                    android:textSize="20dp"
+                                    android:singleLine="true"
+                                    android:id="@+id/ed_contactname"
+                                    android:textColor="@android:color/black"
+                                    android:fontFamily="sans-serif"
+                                    android:background="@drawable/bg_side_unsel"
+
+                                    android:layout_height="@dimen/_35sdp"
+
+                                    android:inputType="text"
+                                    >
+
+                                </android.support.design.widget.TextInputEditText>
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.325"></Space>
+
+                            </LinearLayout>
+
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_marginTop="20sp"
+                                android:id="@+id/btn_signup"
+                                android:background="@drawable/register_button"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#28000000"
+                            android:orientation="vertical"
+                            android:layout_weight="0.13">
+                            <TextView
+                                android:text="** TO ACTIVATE APP contact 9842422619 or 9842972619 **"
+                                android:layout_width="match_parent"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:gravity="center"
+                                android:fontFamily="sans-serif"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/avi_loader2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    style="@style/AVLoadingIndicatorView"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    app:indicatorName="LineSpinFadeLoaderIndicator"
+                    app:indicatorColor="#055EA7"
+                    />
+            </FrameLayout>
+
+
+
+</LinearLayout>
