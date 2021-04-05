@@ -85,7 +85,7 @@
                                     android:layout_weight="0.1"></Space>
 
 
-                                <android.support.design.widget.TextInputEditText
+                                <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/ed_name"
                                     android:layout_width="0dp"
                                     android:layout_height="@dimen/_35sdp"
@@ -98,14 +98,14 @@
                                     android:paddingLeft="15dp"
                                     android:singleLine="true"
                                     android:textColor="@android:color/black"
-                                    android:textSize="20dp"></android.support.design.widget.TextInputEditText>
+                                    android:textSize="20dp"></com.google.android.material.textfield.TextInputEditText>
 
                                 <Space
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="0.1"></Space>
 
-                                <android.support.design.widget.TextInputEditText
+                                <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="0dp"
                                     android:layout_weight="0.35"
                                     android:hint="Network Name*"
@@ -123,7 +123,7 @@
                                     android:inputType="text"
                                     >
 
-                                </android.support.design.widget.TextInputEditText>
+                                </com.google.android.material.textfield.TextInputEditText>
 
                                 <Space
                                     android:layout_width="0dp"
@@ -142,7 +142,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="0.1"></Space>
-                                <android.support.design.widget.TextInputEditText
+                                <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="0dp"
                                     android:layout_weight="0.35"
                                     android:hint="Password*"
@@ -160,14 +160,14 @@
                                     android:inputType="textPassword"
                                     >
 
-                                </android.support.design.widget.TextInputEditText>
+                                </com.google.android.material.textfield.TextInputEditText>
 
                                 <Space
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="0.1"></Space>
 
-                                <android.support.design.widget.TextInputEditText
+                                <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="0dp"
                                     android:layout_weight="0.35"
                                     android:hint="Mobile*"
@@ -183,7 +183,7 @@
                                     android:layout_height="@dimen/_35sdp"
                                     >
 
-                                </android.support.design.widget.TextInputEditText>
+                                </com.google.android.material.textfield.TextInputEditText>
                                 <Space
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="0.1"></Space>
-                                <android.support.design.widget.TextInputEditText
+                                <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="0dp"
                                     android:layout_weight="0.35"
                                     android:hint="Email*"
@@ -217,7 +217,7 @@
                                     android:layout_height="@dimen/_35sdp"
                                     android:inputType="textEmailAddress"
                                     >
-                                </android.support.design.widget.TextInputEditText>
+                                </com.google.android.material.textfield.TextInputEditText>
 
 
                                 <Space
@@ -225,7 +225,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="0.1"></Space>
 
-                                <android.support.design.widget.TextInputEditText
+                                <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="0dp"
                                     android:layout_weight="0.35"
                                     android:hint="Cable Operator*"
@@ -241,7 +241,7 @@
                                     android:layout_height="@dimen/_35sdp"
                                     >
 
-                                </android.support.design.widget.TextInputEditText>
+                                </com.google.android.material.textfield.TextInputEditText>
                                 <Space
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
@@ -260,7 +260,7 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="0.325"></Space>
-                                <android.support.design.widget.TextInputEditText
+                                <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="0dp"
                                     android:layout_weight="0.35"
                                     android:hint="Contact Person Name*"
@@ -277,7 +277,7 @@
                                     android:inputType="text"
                                     >
 
-                                </android.support.design.widget.TextInputEditText>
+                                </com.google.android.material.textfield.TextInputEditText>
                                 <Space
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"

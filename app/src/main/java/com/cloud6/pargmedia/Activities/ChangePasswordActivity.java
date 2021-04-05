@@ -1,15 +1,14 @@
 package com.cloud6.pargmedia.Activities;
 
 import android.content.SharedPreferences;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputEditText;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatButton;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -17,12 +16,15 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputEditText;
 import com.wang.avi.AVLoadingIndicatorView;
 import com.cloud6.pargmedia.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import static android.content.Context.MODE_PRIVATE;
 
 
 public class ChangePasswordActivity extends AppCompatActivity {
@@ -99,8 +101,8 @@ public class ChangePasswordActivity extends AppCompatActivity {
                         else {
                             avi_loader6.setVisibility(View.GONE);
                             Snackbar.make(view,"Your password has been changed successfully",Snackbar.LENGTH_SHORT).show();
-edlg_newpassword.setText("");
-edlg_oldpassword.setText("");
+                        edlg_newpassword.setText("");
+                        edlg_oldpassword.setText("");
                         }
 
 

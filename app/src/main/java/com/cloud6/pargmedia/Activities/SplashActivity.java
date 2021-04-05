@@ -6,14 +6,17 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.cloud6.pargmedia.R;
+
+import static android.content.Context.MODE_PRIVATE;
 
 
 public class SplashActivity extends AppCompatActivity {
@@ -80,14 +83,14 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                if(sp_signup.getString("email","").equals("")){
+                /*if(sp_signup.getString("email","").equals("")){
                     startActivity(new Intent(mContext, SignUpActivity.class));
                     finish();
                 }
-                else {
+                else {*/
                     startActivity(new Intent(mContext, MainActivity.class));
                     finish();
-                }
+              //  }
             }
         },3000);
 

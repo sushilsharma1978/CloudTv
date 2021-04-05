@@ -4,7 +4,6 @@ package com.cloud6.pargmedia.Fragment;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,13 +11,15 @@ import android.view.WindowManager;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import androidx.fragment.app.Fragment;
+
 import com.cloud6.pargmedia.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment{
+public class HomeFragment extends Fragment {
 
     private View mView;
     private String url="";

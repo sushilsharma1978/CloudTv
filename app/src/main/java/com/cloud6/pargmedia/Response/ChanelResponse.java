@@ -11,9 +11,11 @@ public class ChanelResponse {
     @SerializedName("result")
     @Expose
     private List<ChanelResult> result = null;
+
     @SerializedName("message")
     @Expose
     private String message;
+
     @SerializedName("status")
     @Expose
     private String status;

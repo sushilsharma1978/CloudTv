@@ -4,7 +4,8 @@ package com.cloud6.pargmedia.Activities;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 /**
  * Created by Belal on 12/30/2016.

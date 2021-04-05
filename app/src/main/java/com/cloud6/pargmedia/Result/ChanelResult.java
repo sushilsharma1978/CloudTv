@@ -8,9 +8,9 @@ public class ChanelResult {
     @Expose
     private String id;
 
-    @SerializedName("subscribed")
+    @SerializedName("channel_Category_id")
     @Expose
-    private String subscribed;
+    private String channel_Category_id;
 
     @SerializedName("channel_number")
     @Expose
@@ -54,6 +54,25 @@ public class ChanelResult {
     @Expose
     private String about;
 
+    @SerializedName("channelCategoryName")
+    @Expose
+    private String channelCategoryName;
+
+    public String getChannelCategoryName() {
+        return channelCategoryName;
+    }
+
+    public void setChannelCategoryName(String channelCategoryName) {
+        this.channelCategoryName = channelCategoryName;
+    }
+
+    public String getChannel_Category_id() {
+        return channel_Category_id;
+    }
+
+    public void setChannel_Category_id(String channel_Category_id) {
+        this.channel_Category_id = channel_Category_id;
+    }
 
     public String getChannelNumber() {
         return channelNumber;
@@ -63,13 +82,6 @@ public class ChanelResult {
         this.channelNumber = channelNumber;
     }
 
-    public String getSubscription() {
-        return subscribed;
-    }
-
-    public void setSubscription(String subscribed) {
-        this.subscribed = subscribed;
-    }
 
     public String getId() {
         return id;
@@ -173,5 +185,27 @@ public class ChanelResult {
 
     public void setAbout(String about) {
         this.about = about;
+    }
+
+    public ChanelResult(String id, String channel_Category_id, String channelNumber,
+                        String channelName, String channelUrl, String userName, String image, String socialId,
+                        String lat, String lon, String registerId, String iosRegisterId, String status, String dateTime,
+                        String about, String channelCategoryName) {
+        this.id = id;
+        this.channel_Category_id = channel_Category_id;
+        this.channelNumber = channelNumber;
+        this.channelName = channelName;
+        this.channelUrl = channelUrl;
+        this.userName = userName;
+        this.image = image;
+        this.socialId = socialId;
+        this.lat = lat;
+        this.lon = lon;
+        this.registerId = registerId;
+        this.iosRegisterId = iosRegisterId;
+        this.status = status;
+        this.dateTime = dateTime;
+        this.about = about;
+        this.channelCategoryName = channelCategoryName;
     }
 }

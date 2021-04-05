@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "com.cloud6.pargmedia"
         minSdkVersion 17
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 23
         versionName '1.23'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -19,6 +19,10 @@ android {
     productFlavors {
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
 }
 
@@ -27,8 +31,10 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0'
     implementation 'fr.bmartel:jspeedtest:1.32.1'
+    //noinspection GradleCompatible
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'cc.cloudist.acplibrary:library:1.2.1'
     implementation 'com.github.f0ris.sweetalert:library:1.5.6'
@@ -38,17 +44,32 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.wang.avi:library:2.1.3'
     implementation 'com.android.volley:volley:1.1.1'
+    //noinspection GradleCompatible
     implementation 'com.android.support:percent:28.0.0'
 
     implementation 'com.yqritc:android-scalablevideoview:1.0.4'
-  //  implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-core:1.0.15'
-  //  implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-native:1.0.15'
+    //  implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-core:1.0.15'
+    //  implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-native:1.0.15'
     implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever:1.0.14'
 
     //implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
-    implementation 'com.android.support:design:28.0.0'
+
+    //Exopayer depedencies
+    implementation 'com.google.android.exoplayer:exoplayer:2.8.4'
+
+    implementation 'com.devbrackets.android:exomedia:4.3.0'
+    //noinspection GradleCompatible
     implementation 'com.android.support:preference-leanback-v17:28.0.0'
+    //noinspection GradleCompatible
     implementation 'com.android.support:leanback-v17:28.0.0'
+
+    implementation 'android.arch.persistence.room:runtime:1.0.0'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
     //firebase
 

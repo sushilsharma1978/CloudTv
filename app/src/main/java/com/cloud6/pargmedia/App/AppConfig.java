@@ -19,7 +19,7 @@ public class AppConfig {
             OkHttpClient client = new OkHttpClient.Builder()
                     .connectTimeout(1000, TimeUnit.SECONDS)
                     .readTimeout(1000, TimeUnit.SECONDS).build();
-                     retrofit = new Retrofit.Builder().baseUrl("http://pargmedia.com/channel/webservice/")
+                     retrofit = new Retrofit.Builder().baseUrl("http://7starcloud.in/tamilcloud/webservice/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
 
